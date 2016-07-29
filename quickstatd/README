@@ -1,0 +1,17 @@
+
+quickstatd gathers OS-level performance statistics and sends
+them to a running instance of Graphite.
+
+To install quickstatd, run installer.sh.  Usage:
+
+    sudo install.sh <install dir> <graphite host> <monitor interval> [ graphite port (default is 2003) ]
+
+
+Quickstatd is controlled by a startup script in /etc/init.d.  Usage:
+
+    /etc/init.d/quickstatd  start | stop | restart
+
+
+To modify quickstatd settings (such as which metrics you wish to
+monitor), edit /etc/quickstatd.conf.
+
